@@ -1,0 +1,139 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html,
+  body,
+  #app {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html,
+  body,
+  #app {
+    font-size: 80px !important;
+  }
+}
+canvas {
+  border-radius: 20px;
+}
+.com-container,
+.com-chart {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.com-container {
+  position: relative;
+}
+.screen-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background-color: #161522;
+  color: #fff;
+  box-sizing: border-box;
+}
+.screen-container .screen-header {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+}
+.screen-container .screen-header > div img {
+  width: 100%;
+}
+.screen-container .screen-header .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 0.4rem;
+  transform: translate(-50%, -50%);
+}
+.screen-container .screen-header .title-right {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-80%);
+}
+.screen-container .screen-header .qiehuan {
+  width: 0.5rem;
+  cursor: pointer;
+}
+.screen-container .screen-header .datetime {
+  font-size: 0.28rem;
+  margin-left: 10px;
+}
+.screen-container .screen-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.screen-container .screen-body .screen-left {
+  height: 100%;
+  width: 27.6%;
+}
+.screen-container .screen-body .screen-left #left-top {
+  height: 53%;
+  position: relative;
+}
+.screen-container .screen-body .screen-left #left-bottom {
+  height: 31%;
+  margin-top: 25px;
+  position: relative;
+}
+.screen-container .screen-body .screen-middle {
+  height: 100%;
+  width: 41.5%;
+  margin-left: 1.6%;
+  margin-right: 1.6%;
+}
+.screen-container .screen-body .screen-middle #middle-top {
+  width: 100%;
+  height: 56%;
+  position: relative;
+}
+.screen-container .screen-body .screen-middle #middle-bottom {
+  margin-top: 25px;
+  width: 100%;
+  height: 28%;
+  position: relative;
+}
+.screen-container .screen-body .screen-right {
+  height: 100%;
+  width: 27.6%;
+}
+.screen-container .screen-body .screen-right #right-top {
+  height: 46%;
+  position: relative;
+}
+.screen-container .screen-body .screen-right #right-bottom {
+  height: 38%;
+  margin-top: 25px;
+  position: relative;
+}
+.screen-container .screen-body .resize {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.screen-container .screen-body .fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  z-index: 100;
+}
